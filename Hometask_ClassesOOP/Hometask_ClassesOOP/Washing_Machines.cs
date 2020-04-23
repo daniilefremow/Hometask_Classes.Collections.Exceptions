@@ -9,6 +9,11 @@ namespace Hometask_ClassesOOP
         public bool spin_cycle;
         public bool gentle_cycle;
 
+        public Washing_Machines()
+        {
+
+        }
+
         public Washing_Machines(string name, string colour, double price, int power, bool spin_cycle, bool gentle_cycle) : base(name, colour, price, power)
         {
             this.spin_cycle = spin_cycle;
@@ -20,13 +25,13 @@ namespace Hometask_ClassesOOP
         {
             base.PrintInf();
             if (gentle_cycle == true)
-                Console.WriteLine("Деликатный режим имеется");
+                Console.WriteLine("   Деликатный режим имеется");
             else
-                Console.WriteLine("Деликатный режим отсутствует");
+                Console.WriteLine("   Деликатный режим отсутствует");
             if (spin_cycle == true)
-                Console.WriteLine("Режим отжима имеется");
+                Console.WriteLine("   Режим отжима имеется");
             else
-                Console.WriteLine("Режим отжима отсутствует");
+                Console.WriteLine("   Режим отжима отсутствует");
         }
     }
 }

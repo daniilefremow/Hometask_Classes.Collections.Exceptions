@@ -11,6 +11,11 @@ namespace Hometask_ClassesOOP
         public double price;
         public int power;
 
+        public Appliances()
+        {
+
+        }
+
         public Appliances(string name, string colour, double price, int power)
         {
             this.name = name;
@@ -20,7 +25,7 @@ namespace Hometask_ClassesOOP
         }
         public void PrintInf()
         {
-            Console.WriteLine("Название: {0}\nЦвет: {1}\nЦена: {2} рублей\nМощность: {3} Вт", name, colour, price, power);
+            Console.WriteLine("   Название: {0}\n   Цвет: {1}\n   Цена: {2} рублей\n   Мощность: {3} Вт", name, colour, price, power);
         }
     }
 }

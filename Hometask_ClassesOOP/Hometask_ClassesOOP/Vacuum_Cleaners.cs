@@ -20,10 +20,10 @@ namespace Hometask_ClassesOOP
         {
             base.PrintInf();
             if (wet_cleaning == true)
-                Console.WriteLine("Режим влажной уборки имеется");
+                Console.WriteLine("   Режим влажной уборки имеется");
             else
-                Console.WriteLine("Режим влажной уборки отсутствует");
-            Console.WriteLine("Что убирает: {0}", purpose);
+                Console.WriteLine("   Режим влажной уборки отсутствует");
+            Console.WriteLine("   Что убирает: {0}", purpose);
         }
     }
 }
