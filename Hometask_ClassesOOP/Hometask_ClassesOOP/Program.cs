@@ -5,6 +5,7 @@ namespace Hometask_ClassesOOP
 {
     class Program
     {
+        [My(Name = "Даниил", Surname = "Ефремов", Age = 21)]
         static void Main(string[] args)
         {
             List<Washing_Machines> wm = new List<Washing_Machines>();
@@ -26,7 +27,6 @@ namespace Hometask_ClassesOOP
             {
                 key = "нет";
             }
-
 
             try
             {
@@ -100,7 +100,7 @@ namespace Hometask_ClassesOOP
             }
             catch (FormatException)
             {
-                Console.WriteLine("/nВвод данных некорректного формата!");
+                Console.WriteLine("\nВвод данных некорректного формата!");
             }
             finally
             {
